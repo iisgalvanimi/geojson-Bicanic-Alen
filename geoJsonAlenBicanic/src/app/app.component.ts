@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
     this.geoJsonObject = GEOJSON;
     console.log(this.geoJsonObject);
-    console.log(this.markers);
+    console.log(this.geoJsonObject.features[0].geometry.coordinates);
   }
 
   ngOnInit() {
